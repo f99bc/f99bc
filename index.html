@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portafolio personal y presentación profesional.">
+  <title>Tu Nombre | Portafolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <header class="header">
+    <nav class="nav container" aria-label="Navegación principal">
+      <a class="logo" href="#inicio" aria-label="Ir al inicio">
+        &lt;TN<span>/&gt;</span>
+      </a>
+
+      <button class="menu-button" id="menuButton" aria-label="Abrir menú" aria-expanded="false">
+        ☰
+      </button>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#inicio">Inicio</a>
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#contacto">Contacto</a>
+        <button class="theme-button" id="themeButton" aria-label="Cambiar tema">☀️</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" id="inicio">
+      <div class="container hero-grid">
+        <div class="hero-content reveal">
+          <p class="eyebrow">Hola, mi nombre es</p>
+          <h1>Tu Nombre</h1>
+          <h2>Desarrollador de software</h2>
+          <p class="hero-text">
+            Diseño y construyo soluciones digitales claras, funcionales y centradas
+            en las necesidades de las personas.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button primary" href="#proyectos">Ver proyectos</a>
+            <a class="button secondary" href="#contacto">Contactarme</a>
+          </div>
+
+          <div class="social-links" aria-label="Enlaces profesionales">
+            <a href="https://github.com/TU_USUARIO" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://www.linkedin.com/in/TU_USUARIO/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="mailto:correo@ejemplo.com">Correo</a>
+          </div>
+        </div>
+
+        <div class="terminal-card reveal" aria-label="Presentación profesional">
+          <div class="terminal-header">
+            <span></span><span></span><span></span>
+            <p>presentacion.js</p>
+          </div>
+          <pre><code><span class="code-keyword">const</span> perfil = {
+  nombre: <span class="code-string">"Tu Nombre"</span>,
+  rol: <span class="code-string">"Desarrollador"</span>,
+  ubicacion: <span class="code-string">"Colombia"</span>,
+  intereses: [
+    <span class="code-string">"Software"</span>,
+    <span class="code-string">"Inteligencia artificial"</span>,
+    <span class="code-string">"Datos"</span>
+  ],
+  disponible: <span class="code-boolean">true</span>
+};</code></pre>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alternative" id="sobre-mi">
+      <div class="container two-columns">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Conóceme</p>
+          <h2>Sobre mí</h2>
+        </div>
+
+        <div class="about-text reveal">
+          <p>
+            Soy una persona apasionada por la tecnología y la creación de soluciones
+            que convierten ideas en productos útiles. Me interesa el desarrollo de
+            software, la inteligencia artificial y el análisis de datos.
+          </p>
+          <p>
+            Disfruto aprender nuevas herramientas, trabajar en equipo y documentar
+            cada proyecto para que sea fácil de mantener y mejorar.
+          </p>
+
+          <div class="facts">
+            <article>
+              <strong>3+</strong>
+              <span>Proyectos realizados</span>
+            </article>
+            <article>
+              <strong>100%</strong>
+              <span>Compromiso</span>
+            </article>
+            <article>
+              <strong>∞</strong>
+              <span>Aprendizaje continuo</span>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="habilidades">
+      <div class="container">
+        <div class="section-heading centered reveal">
+          <p class="eyebrow">Lo que utilizo</p>
+          <h2>Habilidades</h2>
+          <p>Modifica estas tarjetas con las tecnologías que realmente manejas.</p>
+        </div>
+
+        <div class="skills-grid">
+          <article class="skill-card reveal">
+            <div class="skill-icon">&lt;/&gt;</div>
+            <h3>Desarrollo web</h3>
+            <p>HTML, CSS, JavaScript, diseño adaptable y accesibilidad.</p>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-icon">{ }</div>
+            <h3>Backend</h3>
+            <p>Python, APIs REST, arquitectura por capas y bases de datos.</p>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-icon">AI</div>
+            <h3>Inteligencia artificial</h3>
+            <p>Machine learning, preparación de datos y evaluación de modelos.</p>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-icon">Git</div>
+            <h3>Control de versiones</h3>
+            <p>Git, GitHub, ramas, commits y documentación de proyectos.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alternative" id="proyectos">
+      <div class="container">
+        <div class="section-heading centered reveal">
+          <p class="eyebrow">Mi trabajo</p>
+          <h2>Proyectos destacados</h2>
+          <p>Reemplaza los ejemplos por tus propios repositorios.</p>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card reveal">
+            <div class="project-number">01</div>
+            <div class="project-content">
+              <p class="project-type">Aplicación web</p>
+              <h3>Nombre del proyecto</h3>
+              <p>
+                Descripción breve del problema que resuelve, sus usuarios y las
+                principales funcionalidades implementadas.
+              </p>
+              <div class="tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+              <div class="project-links">
+                <a href="#" aria-label="Ver demostración del proyecto">Ver demo ↗</a>
+                <a href="#" aria-label="Ver código del proyecto">Código ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-number">02</div>
+            <div class="project-content">
+              <p class="project-type">Machine learning</p>
+              <h3>Modelo de clasificación</h3>
+              <p>
+                Proyecto de análisis de datos y entrenamiento de un modelo predictivo,
+                acompañado de métricas y visualizaciones.
+              </p>
+              <div class="tags">
+                <span>Python</span>
+                <span>Pandas</span>
+                <span>Scikit-learn</span>
+              </div>
+              <div class="project-links">
+                <a href="#" aria-label="Ver demostración del proyecto">Ver demo ↗</a>
+                <a href="#" aria-label="Ver código del proyecto">Código ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-number">03</div>
+            <div class="project-content">
+              <p class="project-type">API REST</p>
+              <h3>Servicio de datos</h3>
+              <p>
+                Backend organizado por capas para administrar información, validar
+                solicitudes y conectarse con una base de datos.
+              </p>
+              <div class="tags">
+                <span>Python</span>
+                <span>FastAPI</span>
+                <span>SQL</span>
+              </div>
+              <div class="project-links">
+                <a href="#" aria-label="Ver documentación del proyecto">Documentación ↗</a>
+                <a href="#" aria-label="Ver código del proyecto">Código ↗</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contacto">
+      <div class="container contact-content reveal">
+        <p class="eyebrow">Hablemos</p>
+        <h2>¿Tienes una idea o proyecto?</h2>
+        <p>
+          Estoy disponible para colaborar, aprender y participar en nuevos retos.
+          Puedes escribirme directamente por correo.
+        </p>
+        <a class="button primary" href="mailto:correo@ejemplo.com">
+          Enviar correo
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>Diseñado y desarrollado por Tu Nombre.</p>
+      <p>© <span id="currentYear"></span> Todos los derechos reservados.</p>
+    </div>
+  </footer>
+</body>
+</html>
